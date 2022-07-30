@@ -1,0 +1,170 @@
+/* variable declaration */
+:root {
+  --top: 300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Fredoka, Poppins;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 62.5%;
+}
+/* ---------- Reusable button element------------ */
+button {
+  background-color: #fe5e35;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 30px;
+}
+
+/* ------------------------------ */
+
+/* ---------- NAVBAR ------------ */
+nav {
+  margin: 2rem 0 0 4rem;
+  display: grid;
+  grid-template-columns: 4fr 5fr 1fr;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.nav-items {
+  font-size: 1.2rem;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-around;
+}
+nav img:last-child {
+  justify-self: end;
+}
+/* ------------------------------ */
+
+/* ---------- hero section ------------ */
+.intro-section {
+  margin: 0 6rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+/* ---------- Left Side ------------ */
+
+.left-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.left-section h3 {
+  font-size: 1.6rem;
+}
+
+.left-section h3 img {
+  height: 30px;
+  margin-left: 1rem;
+}
+.left-section h1 {
+  font-size: 3.6rem;
+  font-family: Poppins;
+}
+
+.sub-headlines {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+.sub-headline {
+  margin-left: 5rem;
+  margin-top: 0.8rem;
+}
+.sub-headline img {
+  background-color: #fe5e35;
+  border-radius: 50%;
+  height: 12px;
+  padding: 3px;
+  margin-right: 5px;
+  position: relative;
+  bottom: -3px;
+}
+
+.text {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+.action-btns {
+  display: flex;
+  gap: 2rem;
+}
+/* ---------- Right Side ------------ */
+
+.right-section {
+  display: grid;
+  align-items: center;
+  align-content: flex-start;
+  gap: 40px;
+}
+
+.headphone-div {
+  justify-self: center;
+  position: relative;
+}
+
+.headphone-div img:first-child {
+  position: absolute;
+  height: 100px;
+  bottom: 50px;
+  left: -50px;
+}
+
+.discount-content > * {
+  position: absolute;
+  color: #fff;
+}
+
+.discount-content h4 {
+  font-size: 0.6rem;
+  left: -22px;
+  bottom: 110px;
+}
+.discount-content h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  left: -30px;
+  bottom: 70px;
+}
+.headphone-div img:last-child {
+  height: 300px;
+}
+
+.dots {
+  display: flex;
+  gap: 20px;
+  justify-self: center;
+}
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.yellow-dot {
+  background-color: yellow;
+}
+.tomato-dot {
+  background-color: orange;
+}
+.black-dot {
+  background-color: #000;
+}
+
+.action-btn {
+  justify-self: center;
+}
