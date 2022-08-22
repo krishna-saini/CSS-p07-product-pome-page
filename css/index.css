@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Fredoka, Poppins;
 }
 
 *,
@@ -16,8 +15,14 @@
   box-sizing: inherit;
 }
 
-body {
+html {
   font-size: 62.5%;
+}
+
+body{
+  font-family: Fredoka, Poppins;
+  line-height: 1;
+  font-weight: 400;
 }
 /* ---------- Reusable button element------------ */
 button {
@@ -25,79 +30,96 @@ button {
   color: #fff;
   padding: 1rem 2rem;
   border: none;
-  font-size: 1.2rem;
-  border-radius: 30px;
+  font-size: 1.6rem;
+  border-radius: 3rem;
 }
 
 /* ------------------------------ */
 
 /* ---------- NAVBAR ------------ */
-nav {
-  margin: 2rem 0 0 4rem;
-  display: grid;
-  grid-template-columns: 4fr 5fr 1fr;
+header {
+  margin:0 auto;
+  display: flex;
+  justify-content:space-between;
   align-items: center;
-  column-gap: 50px;
+  gap:4rem;
+  padding-left: 4.8rem;
+  height: 9.6rem;;
 }
 
 .nav-items {
   font-size: 1.2rem;
   font-weight: 100;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap:4rem;
+
 }
-nav img:last-child {
-  justify-self: end;
+.nav-item{
+  font-size: 1.6rem;;
+  font-weight: 700;
+  cursor: pointer;
 }
-/* ------------------------------ */
+
 
 /* ---------- hero section ------------ */
-.intro-section {
-  margin: 0 6rem 2rem 4rem;
-  display: grid;
-  grid-template-columns: 3fr 2fr;
+.hero-section {
+  margin: 0 auto;
+  max-width: 130rem;
+  padding:3.2rem 0;
+}
+
+.hero{
+  display: flex;
+  padding:0 4.8rem;
 }
 
 /* ---------- Left Side ------------ */
 
 .left-section {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  gap:2rem;
+}
+.heading-1{
+  display:flex;
+  align-items: center;
+  gap:4rem;
 }
 .left-section h3 {
-  font-size: 1.6rem;
+  font-size: 3rem;
 }
 
-.left-section h3 img {
-  height: 30px;
-  margin-left: 1rem;
+.heading-1 img {
+  height: 3rem;
+  
 }
 .left-section h1 {
-  font-size: 3.6rem;
-  font-family: Poppins;
+  font-size: 5rem;
+  margin-bottom: 2rem;
 }
 
 .sub-headlines {
-  font-size: 1.2rem;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
 }
 .sub-headline {
-  margin-left: 5rem;
-  margin-top: 0.8rem;
+  font-size: 1.6rem;
+  margin-left: 15%;
 }
 .sub-headline img {
   background-color: #fe5e35;
   border-radius: 50%;
   height: 12px;
-  padding: 3px;
-  margin-right: 5px;
-  position: relative;
-  bottom: -3px;
+  padding: 6px;
+  margin-right: 1.2rem;
+ transform:translateY(6px);
 }
 
 .text {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 .action-btns {
@@ -107,42 +129,50 @@ nav img:last-child {
 /* ---------- Right Side ------------ */
 
 .right-section {
+  width: 100%;
   display: grid;
   align-items: center;
-  align-content: flex-start;
-  gap: 40px;
+  gap: 3rem;
+  margin-top: -6rem;
+  margin-left: -5rem;;
 }
 
 .headphone-div {
   justify-self: center;
+  display: flex;
   position: relative;
 }
 
-.headphone-div img:first-child {
-  position: absolute;
-  height: 100px;
-  bottom: 50px;
-  left: -50px;
+.discount-content{
+  position:absolute;
+  bottom: 20px;
+  left: -20px;
 }
 
-.discount-content > * {
-  position: absolute;
-  color: #fff;
+.discount-text{
+  position:absolute;
+  top:4rem;
+  left:3rem;
+  z-index: 1;
+  color:#fff;
+  display: grid;
+  gap:0.5rem;
 }
 
-.discount-content h4 {
-  font-size: 0.6rem;
-  left: -22px;
-  bottom: 110px;
+.discount-text h4{
+  font-size: 1.2rem;
 }
-.discount-content h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  left: -30px;
-  bottom: 70px;
+.discount-text h1{
+  font-size: 2.4rem;
 }
-.headphone-div img:last-child {
-  height: 300px;
+.discount-bg{
+  height: 10rem;
+  /* position:relative; */
+}
+
+
+.headphone {
+   height: 36rem;
 }
 
 .dots {
@@ -168,3 +198,38 @@ nav img:last-child {
 .action-btn {
   justify-self: center;
 }
+
+
+
+ /**************************/
+/* VIEW BELOW 544px (Phones) */
+/* 16px * 34 = 544px  */
+/**************************/
+
+@media (max-width:34em){
+  .nav-items{
+    /*Hide navigation */
+    display: none;
+  }
+
+  .hero{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap:6rem;
+  }
+  .right-section {
+    width: 80%;
+    
+    margin-top: 0rem;
+    margin-left: 0rem;;
+  }
+
+  
+.left-section {
+  
+  align-self: center;
+  justify-self: center;
+}
+ }
+/* ------------------------------ */
