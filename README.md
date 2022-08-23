@@ -1,5 +1,5 @@
 # Headphone Prdouct Home Page
-This is a solution to the challenges given in Full Stack Web development bootcamp hy [Hitest Chowdhary](https://www.linkedin.com/in/hiteshchoudhary/?originalSubdomain=in)
+This is a solution to the challenges given in Full Stack Web development bootcamp by [Hitest Chowdhary](https://www.linkedin.com/in/hiteshchoudhary/?originalSubdomain=in)
 
 ## Table of contents
 
