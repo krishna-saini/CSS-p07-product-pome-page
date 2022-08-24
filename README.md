@@ -1,5 +1,5 @@
-# Headphone Prdouct Home Page
-This is a solution to the challenges given in Full Stack Web development bootcamp by [Hitest Chowdhary](https://www.linkedin.com/in/hiteshchoudhary/?originalSubdomain=in)
+# A Prdouct Home Page
+This is a solution to the challenge no. 07 given in Full Stack Web development bootcamp by [Hitest Chowdhary](https://www.linkedin.com/in/hiteshchoudhary/?originalSubdomain=in)
 
 ## Table of contents
 
